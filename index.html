@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>Arduino Documentation</header>
+      <ul>
+      <li><a href="#Intoduction_To_Robotics" class="nav-link">Intoduction To Robotics</a></li>
+      <li><a href="#What_Is_Arduino?" class="nav-link">What Is Arduino?</a></li>
+      <li><a href="#Hardware_Overview" class="nav-link">Hardware Overview</a></li>
+      <li><a href="#Software_Architecture" class="nav-link">Software Architecture</a></li>
+      <li><a href="#Usage_and_Testing" class="nav-link">Usage and Testing</a></li>
+      <ul>
+    </nav>
+  <main id="main-doc">
+<section class="main-section" id="Intoduction_To_Robotics">
+  <header>Intoduction To Robotics</header>
+  <hr>
+  <p>Robotics is the field of science and engineering concerned with designing, building, programming, and operating robots.
+<hr>
+A robot is a machine that can perform tasks automatically or semi-automatically, often by sensing its environment, processing information, and taking actions.</p>
+<img alt="a robot" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvPCzOe0lgUwGGuSFIvRSRDgpxE-k0Tcjs4w&s">
+<p>Robotics combines several disciplines, including:
+<ol>
+<li>Computer Science – for programming and artificial intelligence.</li>
+<li>Mechanical Engineering – for designing the robot's structure and movement.</li>
+<li>Electrical Engineering – for circuits, sensors, and motors.</li>
+<li>Artificial Intelligence – for enabling robots to make decisions and learn.</li>
+</ol></p>
+<p>-Examples of robots:
+<ul>
+<li>Industrial robots used in factories to assemble products.</li>
+<li>Medical robots that assist surgeons.</li>
+<li>Autonomous vehicles and drones.</li>
+<li>Household robots such as robot vacuum cleaners.</li>
+<li>Educational robots built with platforms like Arduino.
+In simple terms.</li>
+</ul></p>
+<img alt="industrial-robot" src="https://next-robotics.de/app/uploads/2026/02/Roboterarme-2.jpg">
+<p>Robotics is the science and engineering of creating machines that can sense, think, and act to perform tasks in the real world.</p>
+</section>
+<section class="main-section" id="What_Is_Arduino?">
+  <header>What Is Arduino?</header>
+  <hr>
+  <p>Arduino is an open-source electronics platform that consists of programmable microcontroller boards and software used to create interactive electronic projects.</p>
+<hr>
+<p>In simple terms, Arduino is a small programmable computer on a circuit board that can read inputs (such as sensors and buttons) and control outputs (such as LEDs, motors, displays, and speakers).</p>
+
+<ol>Arduino has two main parts:
+  <br><br>
+<li><strong>The Arduino board (hardware)</strong></li>
+<br>
+<ul>
+<li>Contains a microcontroller (the "brain" of the system).</li>
+<li>Provides pins to connect sensors, motors, LEDs, and other components.</li>
+</ul>
+<br>
+<li><strong>The Arduino IDE (software)</strong></li>
+<br>
+<ul>
+<li>A program on your computer used to write, compile, and upload code to the Arduino board.</li>
+</ul>
+<br>
+<p><strong>How Arduino works?</strong>
+<br>
+You write a program in the Arduino IDE.
+You upload the program to the Arduino board.
+The board continuously executes the program.
+It reads inputs and controls outputs according to your code.
+Example
+
+Suppose you connect:
+
+A button to an input pin.
+An LED to an output pin.
+
+You can program the Arduino so that:
+
+"When the button is pressed, turn on the LED."</p>
+
+<p><strong>Common Arduino boards</strong>
+  <ul>
+<li>Arduino Uno — the most popular board for beginners.</li>
+<li>Arduino Nano — smaller and suitable for compact projects.</li>
+<li>Arduino Mega 2560 — provides many input/output pins for larger projects.</li>
+  </ul>
+</p>
+<p><strong>What can you build withArduino?</strong> 
+<ul>
+<li>Smart home systems
+Robots</li>
+<li>Weather stations</li>
+<li>Security systems</li>
+<li>Automatic irrigation systems</li>
+<li>Electronic games</li>
+<li>Internet of Things (IoT) devices</li>
+</ul></p>
+<p>Why is Arduino popular?
+  <ul>
+<li>Easy to learn for beginners</li>
+<li>Inexpensive</li>
+<li>Open source</li>
+<li>Large community and extensive documentation</li>
+<li>Supports many sensors and electronic modules.</li>
+  </ul>
+  </p>
+</section>
+<section class="main-section" id="Hardware_Overview">
+  <header>Hardware Overview</header>
+  <hr>
+  <p>The hardware architecture of Arduino consists of a programmable microcontroller, a set of digital and analog input/output pins, and various power and communication interfaces. These components work together to allow the Arduino board to interact with external devices, process data, and execute embedded applications efficiently.</p>
+  <hr>
+  <p>A general Hardware Overview can be organized as follows:</p>
+  <p><strong>1. Microcontroller</strong>
+<br>
+The microcontroller is the core component of the Arduino board. It executes the uploaded program, processes input signals, and controls output devices. Different Arduino boards use different microcontrollers; for example, the Arduino Uno uses the ATmega328P microcontroller.</p>
+<p><strong>2. Input and Output (I/O) Pins</strong>
+<br>
+Arduino boards provide digital and analog input/output pins that allow communication with external devices such as sensors, LEDs, motors, displays, and communication modules. Digital pins can read or output binary signals, while analog pins can measure varying voltage levels.</p>
+<p><strong>3. Power Supply and Communication Interfaces</strong>
+<br>
+Arduino boards can be powered through USB connections, external power supplies, or batteries. They also include communication interfaces such as:
+<ul>
+<li>USB for programming and serial communication,</li>
+<li>UART (Serial),</li>
+<li>I²C,</li>
+<li>SPI,</li>
+<hr>
+"which enable communication with computers and peripheral devices".
+</ul></p>
+</section>
+<section class="main-section" id="Software_Architecture">
+  <header>Software Architecture</header>
+  <hr>
+  <p>The Arduino software architecture is based on the Arduino IDE, which provides an environment for writing, compiling, and uploading programs to the microcontroller. Arduino programs, known as sketches, follow a simple structure consisting of the <code>setup()</code> and <code>loop()</code> functions. The platform also offers extensive library support, enabling developers to interact with hardware components through high-level programming interfaces while abstracting the complexity of low-level operations.</p>
+  <hr>
+  <p><strong>1. Arduino IDE and Development Environment</strong>
+  <br>
+  Arduino programs are typically developed using the Arduino Integrated Development Environment (IDE). The IDE provides a code editor, compiler, and uploader that allow users to write, compile, and transfer programs to the Arduino board via USB.</p>
+  <p><strong>2. Program Structure</strong>
+  <br>
+  <code>void setup() {
+    
+} // Runs once when the board starts
+<br>
+void loop() {
+   
+} // Runs repeatedly</code>
+<ul>
+<li><code>setup()</code>: Executes once when the Arduino is powered on or reset. It is used to initialize pins, sensors, and communication interfaces.</li>
+<li><code>loop()</code>: Executes continuously after setup() finishes and contains the main logic of the program.</li>
+</ul></p>
+<p><strong>3. Libraries and Hardware Abstraction</strong>
+<br>
+Arduino provides a large collection of built-in and third-party libraries that abstract low-level hardware operations. These libraries allow developers to interact with sensors, displays, motors, and communication modules using simple functions rather than directly manipulating hardware registers.</p>
+<p>Examples:
+  <ul>
+    <li><code>Servo.h</code> for controlling servo motors,</li>
+    <li><code>LiquidCrystal.h</code> for LCD displays,</li>
+    <li><code>WiFi.h</code> for wireless communication.</li>
+  </ul>
+</p>
+</section>
+<section class="main-section" id="Usage_and_Testing">
+  <header>Usage and Testing</header>
+  <p><strong>1. Development and Usage Process</strong></p>
+  <p>Using an Arduino typically involves connecting the board to a computer, writing a program using the Arduino IDE, compiling the code, and uploading it to the microcontroller. Once programmed, the Arduino executes the instructions continuously and interacts with connected sensors, actuators, and other electronic components.
+
+The typical workflow consists of:
+<ul>
+<li>Connecting the Arduino board to a computer.</li>
+<li>Writing the program (sketch) in the Arduino IDE.</li>
+<li>Compiling and uploading the code.
+Connecting external components.</li>
+<li>Testing and debugging the system.</li>
+</ul></p>
+<p><strong>2. Educational and Prototyping Applications</strong></p>
+<p>Due to its simplicity and low cost, Arduino is extensively used in education to teach programming, electronics, and embedded systems. It is also popular for rapid prototyping, allowing developers and researchers to quickly design and test electronic systems before creating final products.
+  <ul>
+    Common uses include:
+
+<li>Learning programming and electronics.</li>
+<li>University laboratory projects.
+Research experiments.</li>
+<li>Prototype development.</li>
+  </ul>
+</p>
+<p><strong>3. Industrial and Real-World Applications</strong></p>
+<p>Arduino can also be used in practical applications across various fields.
+
+Examples :
+<ul>
+<li>Robotics: controlling motors, sensors, and autonomous systems.</li>
+<li>Internet of Things (IoT): creating smart and connected devices.</li>
+<li>Home Automation: controlling lighting, security, and appliances.</li>
+<li>Environmental Monitoring: measuring temperature, humidity, and air quality.</li>
+<li>Agriculture: implementing smart irrigation and monitoring systems.</li>
+<li>Healthcare: developing monitoring and assistive devices.</li>
+</ul></p>
+<hr>
+<p>Arduino is used by students, hobbyists, researchers, and professionals for a wide range of applications. The development process involves writing code in the Arduino IDE, uploading it to the microcontroller, and integrating the board with external hardware components. Due to its accessibility and flexibility, Arduino has become a popular platform for education, rapid prototyping, robotics, Internet of Things (IoT) systems, home automation, environmental monitoring, and numerous other embedded applications. Its open-source nature and extensive community support make it one of the most widely adopted embedded development platforms in the world.</p>
+<hr>
+</section>
+<footer>By <a href="https://www.instagram.com/zaki.shk16/">Zakaria Sehaki</a>.</footer>
+  </main>
+  </body>
+</html>
